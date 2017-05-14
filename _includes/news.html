@@ -1,77 +1,20 @@
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
+            {% for new in site.data.news %}
             <div class="col-lg-4 col-sm-6">
-                <a href="https://36kr.com/p/5072757.html" target="_blank" class="portfolio-box">
-                    <img src="img/news/36kr.jpg" class="img-responsive" alt="">
+                <a href="{{ new.url }}" target="_blank" class="portfolio-box">
+                    <img src="img/news/{{ new.img }}.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-name">
-                               一站式免编码投研平台，图略家希望实现投资研究的协同作业
+                               {{ new.name }}
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="https://eightroads.com/en/portfolio?regionalFund=ventures-china&page=1&sector=data-business-services&investmentType=ventures&fundType=regional&fund=china" target="_blank" class="portfolio-box">
-                    <img src="img/news/eightroads.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                             图略家正式列入 Eight Roads（斯道资本）Protfolio
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="http://www.toutiao.com/i6298259055144075778/" target="_blank" class="portfolio-box">
-                    <img src="img/news/dollars.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                             图略家完成千万 Pre-A 轮融资，华尔街巨头 Fidelity 领投
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="http://it.sohu.com/20160331/n442996849.shtml" target="_blank" class="portfolio-box">
-                    <img src="img/news/bigdata.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                               图略家CEO演讲实录：大数据时代下的金融分析云平台
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="http://esoft.ctocio.com.cn/13/12458513.shtml" target="_blank" class="portfolio-box">
-                    <img src="img/news/saphana.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                上海寰融（图略家）成为 SAP HANA 全球首家 OEM 合作伙伴
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>            <div class="col-lg-4 col-sm-6">
-                <a href="http://www.cac.gov.cn/2017-03/20/c_1113048608.htm" target="_blank" class="portfolio-box">
-                    <img src="img/news/govern.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-name">
-                                官方认证！国内仅有十家拥有「提供金融信息服务许可」的外资机构
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
