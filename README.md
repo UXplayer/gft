@@ -7,5 +7,5 @@
 
 
 ### 预览
-* 官网地址：[www.gftchina.com/](http://www.gftchina.com/)
-* 个人镜像：[gft.uxplayer.com/](http://gft.uxplayer.com/)
+* 官网地址：[www.gftchina.com](http://www.gftchina.com/)
+* 个人镜像：[gft.uxplayer.com](http://gft.uxplayer.com/)
